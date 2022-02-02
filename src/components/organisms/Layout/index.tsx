@@ -1,7 +1,8 @@
 import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import { ReactNode } from "react";
-import Navbar from "@/components/organisms/Navbar";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 type propType = {
   children: ReactNode;
@@ -18,7 +19,9 @@ export default function Layout({ children }: propType) {
           <Navbar />
         </header>
         <main>{children}</main>
-        <footer>Footer</footer>
+        <footer>
+          <Footer />
+        </footer>
       </Box>
     </>
   );
