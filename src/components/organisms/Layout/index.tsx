@@ -14,14 +14,14 @@ export default function Layout({ children }: propType) {
       <Head>
         <title>Real Estate</title>
       </Head>
-      <Box maxW={"1280px"} m="auto">
-        <header>
+      <Box maxW={{ base: "100vw", md: "1280px" }} m="auto">
+        <Box as="header">
           <Navbar />
-        </header>
-        <main>{children}</main>
-        <footer>
+        </Box>
+        <Box as="main">{children}</Box>
+        <Box as="footer">
           <Footer />
-        </footer>
+        </Box>
       </Box>
     </>
   );
