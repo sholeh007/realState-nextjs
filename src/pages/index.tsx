@@ -21,18 +21,7 @@ const Home: NextPage = ({ forSale, forRent }: any) => {
       <Flex flexWrap={"wrap"}>
         {forRent.map((property: any) => (
           <Fragment key={property.id}>
-            <Property
-              rooms={property.rooms}
-              baths={property.baths}
-              area={property.area}
-              agency={property.agency}
-              price={property.price}
-              rentFrequency={property.rentFrequency}
-              isVerified={property.isVerified}
-              coverPhoto={property.coverPhoto}
-              externalID={property.externalID}
-              title={property.title}
-            />
+            <Property property={property} />
           </Fragment>
         ))}
       </Flex>
@@ -49,18 +38,7 @@ const Home: NextPage = ({ forSale, forRent }: any) => {
       <Flex flexWrap="wrap">
         {forSale.map((property: any) => (
           <Fragment key={property.id}>
-            <Property
-              rooms={property.rooms}
-              baths={property.baths}
-              area={property.area}
-              agency={property.agency}
-              price={property.price}
-              rentFrequency={property.rentFrequency}
-              isVerified={property.isVerified}
-              coverPhoto={property.coverPhoto}
-              externalID={property.externalID}
-              title={property.title}
-            />
+            <Property property={property} />
           </Fragment>
         ))}
       </Flex>

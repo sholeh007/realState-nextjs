@@ -19,18 +19,20 @@ type propType = {
   externalID: string;
 };
 
-export default function Property({
-  coverPhoto,
-  price,
-  rentFrequency,
-  rooms,
-  title,
-  baths,
-  area,
-  agency,
-  isVerified,
-  externalID,
-}: propType) {
+export default function Property({ property }: any) {
+  const {
+    coverPhoto,
+    price,
+    rentFrequency,
+    rooms,
+    title,
+    baths,
+    area,
+    agency,
+    isVerified,
+    externalID,
+  }: propType = property;
+
   return (
     <Link href={`/property/${externalID}`} passHref>
       <Box

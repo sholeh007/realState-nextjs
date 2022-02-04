@@ -23,7 +23,6 @@ export default function Navbar() {
       p={2}
       borderBottom={"1px"}
       borderColor={"gray.100"}
-      mr={{ base: "-20", md: "0" }}
       alignItems={"center"}
     >
       <Box

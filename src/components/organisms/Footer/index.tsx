@@ -9,7 +9,6 @@ export default function Footer() {
       color={"gray.600"}
       borderTop={"1px"}
       borderColor={"gray.100"}
-      mr={{ base: "-120", md: "0" }}
     >
       2022 Real-State, Inc.
     </Box>
