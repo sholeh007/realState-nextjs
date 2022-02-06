@@ -1,4 +1,4 @@
-import { Flex, Box, Spacer, Text, Avatar, VStack } from "@chakra-ui/react";
+import { Flex, Box, Text, Avatar, Stack } from "@chakra-ui/react";
 import { FaBed, FaBath } from "react-icons/fa";
 import { BsGridFill } from "react-icons/bs";
 import { GoVerified } from "react-icons/go";
@@ -71,7 +71,7 @@ const PropertyDetails: NextPage = ({ data }: any) => {
           mt={"10"}
           justify={"space-between"}
         >
-          <VStack spacing={"10"}>
+          <Stack spacing={"10"}>
             <Flex
               justify={"space-between"}
               w="400px"
@@ -101,7 +101,7 @@ const PropertyDetails: NextPage = ({ data }: any) => {
                 <Text fontWeight={"bold"}>{furnishingStatus}</Text>
               </Flex>
             )}
-          </VStack>
+          </Stack>
         </Flex>
         <Box>
           {amenities.length > 0 && (
