@@ -10,7 +10,7 @@ type propType = {
 
 export default function Layout({ children }: propType) {
   return (
-    <Box maxW={"100vw"}>
+    <>
       <Head>
         <title>Real Estate</title>
       </Head>
@@ -23,6 +23,6 @@ export default function Layout({ children }: propType) {
           <Footer />
         </Box>
       </Box>
-    </Box>
+    </>
   );
 }
