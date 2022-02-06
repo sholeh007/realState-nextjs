@@ -37,7 +37,7 @@ export default function Navbar() {
       </Box>
       <Spacer />
       {isTablet ? (
-        <Box position={"relative"}>
+        <Box>
           <Menu>
             <MenuButton
               as={IconButton}
@@ -45,7 +45,7 @@ export default function Navbar() {
               variant="outline"
               color={"red.400"}
             />
-            <MenuList zIndex={"2"}>
+            <MenuList>
               <Link href={"/"} passHref>
                 <MenuItem icon={<FcHome />}>Home</MenuItem>
               </Link>

@@ -14,7 +14,7 @@ export default function Layout({ children }: propType) {
       <Head>
         <title>Real Estate</title>
       </Head>
-      <Box maxW={{ base: "100vw", md: "1280px" }} m="auto">
+      <Box maxW={"1280px"} m="auto">
         <Box as="header">
           <Navbar />
         </Box>

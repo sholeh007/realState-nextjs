@@ -40,9 +40,8 @@ export default function Property({ property }: any) {
         mx={"auto"}
         mt={"5"}
         _hover={{
-          shadow: "md",
+          shadow: "lg",
           transition: "0.3s",
-          transform: "scale(1.1)",
         }}
       >
         <Flex flexWrap={"wrap"} w={"420px"} p={5} cursor={"pointer"}>
