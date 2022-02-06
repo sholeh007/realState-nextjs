@@ -11,9 +11,9 @@ import {
 import { useRouter } from "next/router";
 import { MdCancel } from "react-icons/md";
 import { Fragment, useCallback, useEffect, useState } from "react";
-import { getFilterValues, filterData } from "src/utils/filterData";
+import { getFilterValues, filterData } from "../../../utils/filterData";
 import Image from "next/image";
-import { fetchApi } from "src/utils/fetchApi";
+import { fetchApi } from "../../../utils/fetchApi";
 
 export default function SearchFilter() {
   const [filters] = useState(filterData);

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { Flex, Box } from "@chakra-ui/react";
-import { fetchApi } from "src/utils/fetchApi";
+import { fetchApi } from "../utils/fetchApi";
 import { Fragment } from "react";
 import Banner from "@/components/molecules/Banner";
 import Property from "@/components/molecules/Property";

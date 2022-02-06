@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { BsFilter } from "react-icons/bs";
 import { Fragment, useState } from "react";
 import type { GetServerSideProps, NextPage } from "next";
-import { fetchApi } from "src/utils/fetchApi";
+import { fetchApi } from "../../utils/fetchApi";
 import SearchFilter from "@/components/molecules/SearchFilter";
 import Property from "@/components/molecules/Property";
 

@@ -3,7 +3,7 @@ import { FaBed, FaBath } from "react-icons/fa";
 import { BsGridFill } from "react-icons/bs";
 import { GoVerified } from "react-icons/go";
 import type { GetServerSideProps, NextPage } from "next";
-import { fetchApi } from "src/utils/fetchApi";
+import { fetchApi } from "../../utils/fetchApi";
 import ImageScrollBar from "@/components/molecules/ImageScrollBar";
 import millify from "millify";
 
