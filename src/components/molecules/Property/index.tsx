@@ -52,7 +52,7 @@ export default function Property({ property }: any) {
               width={400}
               height={260}
               alt="house"
-              blurDataURL="base64"
+              blurDataURL={coverPhoto ? coverPhoto.url : "/img/house.jpg"}
               placeholder="blur"
             />
           </Box>

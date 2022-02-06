@@ -30,7 +30,7 @@ export default function Banner({
         width={500}
         height={300}
         alt="banner"
-        blurDataURL="base64"
+        blurDataURL={imageUrl}
         placeholder="blur"
       />
       <Box p={5}>
