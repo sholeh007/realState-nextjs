@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { Flex, Box } from "@chakra-ui/react";
 import { fetchApi } from "../utils/fetchApi";
-import { Fragment } from "react";
+import { Fragment, Key } from "react";
 import Banner from "@/components/molecules/Banner";
 import Property from "@/components/molecules/Property";
 
@@ -19,7 +19,7 @@ const Home: NextPage = ({ forSale, forRent }: any) => {
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
       />
       <Flex flexWrap={"wrap"}>
-        {forRent.map((property: any) => (
+        {forRent.map((property: { id: Key | null | undefined }) => (
           <Fragment key={property.id}>
             <Property property={property} />
           </Fragment>
@@ -36,7 +36,7 @@ const Home: NextPage = ({ forSale, forRent }: any) => {
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008"
       />
       <Flex flexWrap="wrap">
-        {forSale.map((property: any) => (
+        {forSale.map((property: { id: Key | null | undefined }) => (
           <Fragment key={property.id}>
             <Property property={property} />
           </Fragment>
